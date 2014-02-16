@@ -23,7 +23,7 @@ switch(playerSide) do
 	};
 };
 
-if(__GETC__(life_adminlevel) < 1) then
+if(__GETC__(life_adminlevel_589937) < 1) then
 {
 	ctrlShow[2020,false];
 	ctrlShow[2021,false];
@@ -31,7 +31,7 @@ if(__GETC__(life_adminlevel) < 1) then
 
 [] call life_fnc_p_updateMenu;
 
-if(__GETC__(life_adminlevel) < 1) then
+if(__GETC__(life_adminlevel_589937) < 1) then
 {
 	ctrlShow[2020,false];
 	ctrlShow[2021,false];

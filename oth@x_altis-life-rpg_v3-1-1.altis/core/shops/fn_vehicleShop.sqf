@@ -118,7 +118,7 @@ switch (life_veh_shop) do
 	case "fed_car":
 	{
 		if(playerSide == civilian) exitWith {_kill =  "You are not a cop."};
-		if(__GETC__(life_adminlevel) < 1) exitWith {_kill = "You Are Not A Federal Agent!"};
+		if(__GETC__(life_adminlevel_589937) < 1) exitWith {_kill = "You Are Not A Federal Agent!"};
 		ctrlSetText[2301,"Secret Service Car Shop"];
 		
 	};
@@ -150,7 +150,7 @@ switch (life_veh_shop) do
 	case "fed_air":
 	{
 		if(playerSide == civilian) exitWith {_kill =  "You are not a cop."};
-		if(__GETC__(life_adminlevel) < 1) exitWith {_kill = "You Are Not A Federal Agent!"};
+		if(__GETC__(life_adminlevel_589937) < 1) exitWith {_kill = "You Are Not A Federal Agent!"};
 		ctrlSetText[2301,"Secret Service Air Shop"];
 	};
 	

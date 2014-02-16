@@ -19,7 +19,7 @@ switch (true) do
 {
 	case (str(player) in ["Fed_1","Fed_2","Fed_3","Fed_4","Fed_5","_Fed_6"]):
 	{
-		if(__GETC__(life_adminlevel) < 1)then {endMission "Loser"; } else
+		if(__GETC__(life_adminlevel_589937) < 1)then {endMission "Loser"; } else
 		{
 			private["_handle"];
 			//_handle = player execVM "core\client\fed_init.sqf";
@@ -32,7 +32,7 @@ switch (true) do
 		switch (true) do
 		{
 			case(__GETC__(life_coplevel) > 0) : {}; // Do nothing
-			case (__GETC__(life_adminlevel) > 0) : {}; //Do nothing
+			case (__GETC__(life_adminlevel_589937) > 0) : {}; //Do nothing
 			default {endMission "Loser";};
 		};
 	};

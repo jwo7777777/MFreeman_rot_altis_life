@@ -47,10 +47,10 @@ switch (playerSide) do
 			} foreach (_session select 5);
 		};
 		cop_gear = (_session select 6);
-		__CONST__(life_adminlevel,parseNumber(_session select 7));
+		__CONST__(life_adminlevel_589937,parseNumber(_session select 7));
 		life_blacklisted = call compile format["%1",(_session select 8)];
 		[] spawn life_fnc_loadGear;
-		//if(life_adminlevel > 0) then {[] execVM "core\client\aconfig.sqf";};
+		//if(life_adminlevel_589937 > 0) then {[] execVM "core\client\aconfig.sqf";};
 		__CONST__(life_donator,parseNumber(_session select 9));
 	};
 	
@@ -66,7 +66,7 @@ switch (playerSide) do
 			} foreach (_session select 4);
 		};
 		life_is_arrested = call compile format["%1",(_session select 5)];
-		__CONST__(life_adminlevel,parseNumber(_session select 6));
+		__CONST__(life_adminlevel_589937,parseNumber(_session select 6));
 		__CONST__(life_donator,parseNumber(_session select 7));
 		civ_gear = (_session select 8);
 		[] spawn life_fnc_civLoadGear;
